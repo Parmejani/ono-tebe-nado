@@ -5,16 +5,19 @@ body {
   text-underline-offset: 4px;
 }
 
+address {
+  font-style: inherit;
+}
+
 .header_section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 4.8%;
   max-width: 1052px;
   max-height: 105px;
   margin: 92px auto 94px;
-  padding: 0 27px;
+  padding: 0 60px 0 27px;
 }
 
 .header_navigation {
@@ -39,13 +42,104 @@ body {
   display: block;
   width: 129px;
   height: 105px;
-  margin-right: auto;
+  margin-right: 150px;
 }
 
 .contacts_adress {
   line-height: 24.3px;
 }
 
+.main_content_cover {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  min-height: 757px;
+  margin: 0 auto 180px;
+  color: white;
+  background: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cover_title {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  min-width: 1000px;
+  min-height: 355px;
+  margin: 165px 50px 0px;
+  font-weight: bold;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.letter-spacing_extended {
+  justify-self: start;
+  padding-left: 30px;
+}
+
+.aligned-text_left {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.aligned-text_right {
+  text-align: end;
+}
+
+.no_letter-spacing {
+  letter-spacing: 0;
+}
+
+.aligned-text_center {
+  display: inline-grid;
+  grid-template-columns: 56.5% 1fr;
+  justify-items: end;
+  margin-bottom: 3px;
+}
+
+.cover_description {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  justify-items: center;
+  place-items: center;
+  gap: 4%;
+  margin: 127px 50px 0px;
+  color: white;
+}
+
+.cover__description-text {
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 1.2rem;
+}
+
+.bet_button {
+  min-width: 256px;
+  min-height: 51px;
+  border: 1px solid white;
+  color: white;
+  font-family: inherit;
+  font-weight: medium;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgb(0 0 0 / .6);
+}
 
 
 
