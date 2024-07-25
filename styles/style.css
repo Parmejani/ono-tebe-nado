@@ -222,6 +222,49 @@ address {
   font-size: 20px;
 }
 
+.main_content_about {
+  display: grid;
+  grid-template-columns: 1fr 66%;
+  grid-template-rows: 1fr 58%;
+  place-items: center start;
+  column-gap: 1.5%;
+  max-width: 1052px;
+  min-height: 595px;
+  margin: 0 auto;
+}
+
+.about_logo {
+  display: flex;
+  place-self: start center;
+  justify-content: center;
+  align-items: center;
+  min-width: 240px;
+  min-height: 240px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.about_logo_image {
+  width: 148px;
+  height: 114px;
+}
+
+.about_title {
+  grid-area: 1/2/2/3;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about_text {
+  display: grid;
+  grid-area: 2/2/3/3;
+  row-gap: 8%;
+  align-self: start;
+  font-size: 20px;
+  word-spacing: 1px;
+}
+
 .overlay {
   position: absolute;
   z-index: 1;
