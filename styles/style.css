@@ -1,8 +1,11 @@
 body {
-  font-family: Raleway, sans-serif;
   font-weight: normal;
   font-size: 18px;
   text-underline-offset: 4px;
+}
+
+ul {
+  list-style: none;
 }
 
 address {
@@ -45,7 +48,7 @@ address {
   margin-right: 150px;
 }
 
-.contacts_adress {
+.contacts_address {
   line-height: 24.3px;
 }
 
@@ -126,7 +129,6 @@ address {
   border: 1px solid white;
   color: white;
   font-family: inherit;
-  font-weight: medium;
   font-size: 22px;
   text-transform: uppercase;
   background: transparent;
@@ -138,7 +140,7 @@ address {
   justify-content: space-between;
   max-width: 1052px;
   min-height: 692px;
-  margin: 0px auto 180px;
+  margin: 0px auto 146px;
 }
 
 .lots_heading {
@@ -224,22 +226,28 @@ address {
 
 .main_content_about {
   display: grid;
-  grid-template-columns: 1fr 66%;
-  grid-template-rows: 1fr 58%;
-  place-items: center start;
-  column-gap: 1.5%;
+  grid-template-columns: 334px auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "logo title"
+    ". text";
+  place-items: start;
+  row-gap: 10px;
+  column-gap: 25px;
   max-width: 1052px;
-  min-height: 595px;
+  max-height: 595px;
   margin: 0 auto;
 }
 
 .about_logo {
   display: flex;
-  place-self: start center;
+  grid-area: logo;
+  justify-self: center;
   justify-content: center;
   align-items: center;
   min-width: 240px;
   min-height: 240px;
+  margin-top: 35px;
   border-radius: 50%;
   background-color: black;
 }
@@ -250,7 +258,8 @@ address {
 }
 
 .about_title {
-  grid-area: 1/2/2/3;
+  grid-area: title;
+  margin-top: 136px;
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
@@ -258,11 +267,33 @@ address {
 
 .about_text {
   display: grid;
-  grid-area: 2/2/3/3;
-  row-gap: 8%;
-  align-self: start;
+  grid-area: text;
+  gap: 25px;
   font-size: 20px;
   word-spacing: 1px;
+}
+
+.footer_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 180px auto 0;
+}
+
+.footer_menu-list {
+  padding-left: 35px;
+  text-align: center;
+}
+
+.footer_menu-link_active {
+  text-decoration: none;
+}
+
+.footer_social-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 240px;
 }
 
 .overlay {
