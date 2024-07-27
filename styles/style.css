@@ -109,7 +109,6 @@ address {
   z-index: 2;
   display: grid;
   grid-template-columns: 70% 1fr;
-  justify-items: center;
   place-items: center;
   gap: 4%;
   margin: 127px 50px 0px;
@@ -162,7 +161,6 @@ address {
 
 .lots_card-list-item {
   flex-grow: 1;
-  
 }
 
 .card-link {
@@ -295,6 +293,8 @@ address {
   justify-content: space-between;
   min-width: 240px;
 }
+
+/* Линза для картинок */
 
 .overlay {
   position: absolute;
