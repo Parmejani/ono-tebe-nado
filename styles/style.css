@@ -22,10 +22,6 @@ address {
   list-style: circle;
 }
 
-.menu_item .menu_item_active {
-  text-decoration: none;
-}
-
 .header_logo {
   display: block;
   width: 129px;
@@ -249,7 +245,7 @@ address {
   flex-direction: row;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 182px auto 88px;
+  margin: 180px auto 88px;
 }
 
 .footer_menu-list {
@@ -280,6 +276,10 @@ address {
 
 .none-style_list {
   list-style: none;
+}
+
+.active_link {
+  text-decoration: none;
 }
 
 
