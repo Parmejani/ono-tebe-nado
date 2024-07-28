@@ -199,7 +199,7 @@ address {
 .main_content_about {
   display: grid;
   grid-template-columns: 334px auto;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr auto;
   grid-template-areas: 
     "logo title"
     ". text";
@@ -207,7 +207,6 @@ address {
   row-gap: 10px;
   column-gap: 25px;
   max-width: 1052px;
-  max-height: 595px;
   margin: 0 auto;
 }
 
@@ -250,7 +249,7 @@ address {
   flex-direction: row;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 182px auto 0;
+  margin: 182px auto 88px;
 }
 
 .footer_menu-list {
