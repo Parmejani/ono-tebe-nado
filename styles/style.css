@@ -133,7 +133,6 @@
 
 .lots_card-list-item {
   display: flex;
-  flex-grow: 1;
   min-height: 563px;
 }
 
